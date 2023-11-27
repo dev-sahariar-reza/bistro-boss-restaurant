@@ -19,7 +19,7 @@ video {
   @apply text-[#D99904] text-sm lg:text-xl text-center mb-4;
 }
 .boss-heading {
-  @apply text-2xl lg:text-[40px] text-center border border-t-2 border-b-2 py-5 mb-8 lg:mb-12;
+  @apply text-2xl lg:text-[40px] text-center border-t-2 border-b-2 py-5 mb-8 lg:mb-12;
 }
 
 /* Footer Section CSS */
@@ -50,4 +50,12 @@ video {
 }
 .boss-category-image {
   @apply min-h-[405px] min-w-[270px];
+}
+
+/* about us section */
+.boss-about-title {
+  @apply text-4xl text-center font-semibold mb-5;
+}
+.boss-about-text {
+  @apply text-base text-justify;
 }
