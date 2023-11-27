@@ -6,9 +6,20 @@
 * {
   font-family: "Inter", sans-serif;
 }
+img,
+video {
+  width: auto;
+  height: auto;
+}
 
 .boss-container {
-  @apply container mx-auto my-14;
+  @apply container mx-auto my-8 lg:my-14;
+}
+.boss-heading-subtext {
+  @apply text-[#D99904] text-sm lg:text-xl text-center mb-4;
+}
+.boss-heading {
+  @apply text-2xl lg:text-[40px] text-center border border-t-2 border-b-2 py-5 mb-8 lg:mb-12;
 }
 
 /* Footer Section CSS */
@@ -31,4 +42,12 @@
 }
 .boss-not-active-link {
   @apply font-semibold text-sm text-black lg:text-white lg:mr-5;
+}
+
+/* Category Section */
+.boss-category-text {
+  @apply text-[12px] lg:text-4xl text-center text-white uppercase -mt-24;
+}
+.boss-category-image {
+  @apply min-h-[405px] min-w-[270px];
 }
