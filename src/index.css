@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Common CSS */
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.boss-container {
+  @apply container mx-auto my-14;
+}
+
+/* Footer Section CSS */
+.boss-footer-heading {
+  @apply text-[32px] text-white mb-[24px] text-center font-medium;
+}
+.boss-footer-text {
+  @apply text-[20px] text-white mb-[10px] text-center font-medium;
+}
+.boss-footer-icon {
+  @apply text-white text-[20px] mt-3 mr-5;
+}
+.boss-copyright {
+  @apply text-white text-center bg-[#151515] py-[17px];
+}
