@@ -13,7 +13,7 @@ video {
 }
 
 .boss-container {
-  @apply container mx-auto my-8 lg:my-14;
+  @apply container mx-auto my-8 lg:my-16;
 }
 .boss-heading-subtext {
   @apply text-[#D99904] text-sm lg:text-xl text-center mb-4;
