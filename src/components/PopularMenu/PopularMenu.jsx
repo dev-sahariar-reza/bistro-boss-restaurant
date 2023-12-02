@@ -1,19 +1,10 @@
-import { useEffect, useState } from "react";
 import MenuItems from "../MenuItems/MenuItems";
 import { Link } from "react-router-dom";
+import { useMenu } from "../../hooks/useMenu";
 
 const PopularMenu = () => {
-  const [menu, setMenu] = useState([]);
-
-  // fetch data
-  useEffect(() => {
-    fetch("menu.json")
-      .then((res) => res.json())
-      .then((data) => {
-        const popularItems = data.filter((item) => item.category === "popular");
-        setMenu(popularItems);
-      });
-  }, []);
+  const [menu] = useMenu();
+  const popular = menu.filter((item) => item.category === "popular");
 
   return (
     <section className="boss-container">
@@ -21,7 +12,7 @@ const PopularMenu = () => {
       <h1 className="boss-heading">FROM OUR MENU</h1>
 
       <div className="grid grid-cols-1 lg:grid-cols-2">
-        {menu.map((item) => (
+        {popular.map((item) => (
           <MenuItems key={item._id} item={item} />
         ))}
       </div>
