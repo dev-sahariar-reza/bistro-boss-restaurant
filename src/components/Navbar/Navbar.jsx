@@ -15,6 +15,16 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
+          to="/menu"
+          className={({ isActive }) =>
+            isActive ? "boss-active-link" : "boss-not-active-link"
+          }
+        >
+          Our Menu
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
           to="/contact"
           className={({ isActive }) =>
             isActive ? "boss-active-link" : "boss-not-active-link"

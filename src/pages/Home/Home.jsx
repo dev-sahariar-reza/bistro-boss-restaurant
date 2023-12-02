@@ -5,10 +5,14 @@ import Recommends from "../../components/ChiefRecommend/Recommends";
 import Featured from "../../components/Featured/Featured";
 import PopularMenu from "../../components/PopularMenu/PopularMenu";
 import Testimonials from "../../components/Testimonials/Testimonials";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   return (
     <>
+      <Helmet>
+        <title>Bistro Boss Restaurant | Home</title>
+      </Helmet>
       <Banner />
       <Category />
       <AboutUs />
