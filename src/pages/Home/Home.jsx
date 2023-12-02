@@ -4,6 +4,7 @@ import Category from "../../components/Category/Category";
 import Recommends from "../../components/ChiefRecommend/Recommends";
 import Featured from "../../components/Featured/Featured";
 import PopularMenu from "../../components/PopularMenu/PopularMenu";
+import Testimonials from "../../components/Testimonials/Testimonials";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <PopularMenu />
       <Recommends />
       <Featured />
+      <Testimonials />
     </>
   );
 };
